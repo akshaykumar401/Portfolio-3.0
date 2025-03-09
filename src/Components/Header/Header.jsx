@@ -1,11 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { Switch } from "../index.js";
 
 function Header() {
-  const [isDarkMode, setIsDarkMode] = useState(false)
-
-  const toggleTheme = () => { 
-    setIsDarkMode(!isDarkMode)
+  const displayMenu = () => {
+    const menu = document.getElementById("list");
+    
+    if (window.innerWidth < 768) {
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        menu.classList.add('flex', 'flex-col', 'items-center', "py-20", "w-[250px]", "h-screen", "bg-blue-300", "dark:bg-blue-950", "text-black", "dark:text-white", "fixed", "top-0", "right-0", "transition-all", "duration-200");
+      } else {
+        menu.classList.add('hidden');
+        menu.classList.remove('flex', 'flex-col', 'items-center', "py-20", "w-[250px]", "h-screen", "bg-blue-300", "dark:bg-blue-950", "text-black", "dark:text-white", "fixed", "top-0", "right-0", "transition-all", "duration-200", "gap-4");
+      }
+    }
   }
 
   return (
@@ -16,66 +25,75 @@ function Header() {
         </Link>
       </div>
 
-      <div id="list" className='w-[80%] h-full'>
-        <ul className='flex justify-around items-center h-full text-lg'>
+      {/* For Larger Screen */}
+      <div className='w-[80%] h-full'>
+        <ul id='list' className='hidden md:flex md:justify-around md:items-center md:h-full md:text-lg'>
           <li>
             <NavLink
               to="/"
               className={({isActive}) =>
-                `${isActive ? "dark:text-green-400 text-fuchsia-700 font-bold" : ""}`
+                `${isActive ? "dark:text-green-400 text-fuchsia-700 font-bold" : "dark:hover:text-yellow-200 hover:text-gray-500 "} duration-250`
               }
             >
               Home
             </NavLink>
           </li>
 
+          <hr className="md:hidden w-48 h-0.5 mx-auto my-2 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700" />
+
           <li>
             <NavLink
               to="/about"
               className={({isActive}) =>
-                `${isActive ? "dark:text-green-400 text-fuchsia-700 font-bold" : ""} `
+                `${isActive ? "dark:text-green-400 text-fuchsia-700 font-bold" : "dark:hover:text-yellow-200 hover:text-gray-500"} duration-250`
               }
             >
               About
             </NavLink>
           </li>
 
+          <hr className="md:hidden w-48 h-0.5 mx-auto my-2 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700" />
+
+
           <li>
             <NavLink
               to="/projects"
               className={({isActive}) =>
-                `${isActive ? "dark:text-green-400 text-fuchsia-700 font-bold" : ""} `
+                `${isActive ? "dark:text-green-400 text-fuchsia-700 font-bold" : "dark:hover:text-yellow-200 hover:text-gray-500"} duration-250`
               }
             >
               Project
             </NavLink>
           </li>
 
+          <hr className="md:hidden w-48 h-0.5 mx-auto my-2 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700" />
+
+
           <li>
             <NavLink
               to="/contect"
               className={({isActive}) =>
-                `${isActive ? "dark:text-green-400 text-fuchsia-700 font-bold" : ""} `
+                `${isActive ? "dark:text-green-400 text-fuchsia-700 font-bold" : "dark:hover:text-yellow-200 hover:text-gray-500"} duration-250`
               }
             >
               Contect
             </NavLink>
           </li>
 
+          <hr className="md:hidden w-48 h-0.5 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700" />
+
+
           <li>
-            <button onClick={toggleTheme} className='flex items-center justify-center cursor-pointer'>
-              {isDarkMode ? (
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m8.66-8.66h-1M4.34 12H3m15.36 4.95l-.7-.7M6.34 6.34l-.7-.7m12.02 12.02l-.7-.7M6.34 17.66l-.7-.7M12 5a7 7 0 100 14 7 7 0 000-14z" />
-                </svg>
-              ) : (
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m8.66-8.66h-1M4.34 12H3m15.36 4.95l-.7-.7M6.34 6.34l-.7-.7m12.02 12.02l-.7-.7M6.34 17.66l-.7-.7M12 5a7 7 0 100 14 7 7 0 000-14z" />
-                </svg>
-              )}
-            </button>
+            <Switch />
           </li>
         </ul>
+      </div>
+
+      {/* For Smaller Screen */}
+      <div id="menu" className='w-[40px] h-full flex justify-center items-center md:hidden z-50'>
+        <button className='text-2xl cursor-pointer hover:text-gray-500 dark:hover:text-yellow-200' onClick={displayMenu}>
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
       </div>
     </header>
   )
