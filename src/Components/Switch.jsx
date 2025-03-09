@@ -5,11 +5,10 @@ const Switch = () => {
   const hendleChange = () => {
     const checkbox = document.getElementById('checkbox');
     const body = document.body;
-    
-    if (!checkbox.checked) {
-      body.classList.add('dark');
-    } else {
+    if (checkbox.checked === false) {
       body.classList.remove('dark');
+    } else {
+      body.classList.add('dark');
     }
   }
 
@@ -17,7 +16,7 @@ const Switch = () => {
   return (
     <StyledWrapper>
       <label className="switch">
-        <input onClick={hendleChange} defaultChecked="true" id="checkbox" type="checkbox" />
+        <input onClick={hendleChange} defaultChecked="false" id="checkbox" type="checkbox" />
         <span className="slider">
           <div className="star star_1" />
           <div className="star star_2" />
