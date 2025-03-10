@@ -4,6 +4,7 @@ import Switch from "./Switch";
 import Profile from "./Profile.jsx";
 import Galary from "./Galary.jsx";
 import Loader from "./Loader.jsx";
+import SkillIdicator from "./SkillIdicator.jsx";
 
 export {
   Header,
@@ -11,5 +12,6 @@ export {
   Switch,
   Profile,
   Galary,
-  Loader
+  Loader,
+  SkillIdicator
 }

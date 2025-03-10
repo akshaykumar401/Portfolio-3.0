@@ -1,5 +1,5 @@
 import React from "react";
-import { Profile, Galary } from "../Components";
+import { Profile, Galary, SkillIdicator } from "../Components";
 import { Link } from "react-router-dom";
 import {
   WebTodo1,
@@ -11,12 +11,25 @@ import {
   WebCal1,
   WebCal2,
   WebCal3,
+  WebCal4,
+  WebCal5,
   DescCal1,
   DescCal2,
   DescCal3,
   DescCal4,
-} from "../assets/index.js"
-
+  DescCal5,
+  C,
+  Backend,
+  CPP,
+  DSA,
+  Frontend,
+  JS,
+  MongoDB,
+  Mysql,
+  PHP,
+  Python,
+  ReactJS,
+} from "../assets/index.js";
 
 function Home() {
   return (
@@ -84,7 +97,7 @@ function Home() {
       {/* All My Projects */}
       <div className="px-4 py-3">
         {/* Heading */}
-        <div id="heading" className="flex items-center gap-3 text-2xl px-3">
+        <div className="flex items-center gap-3 text-2xl px-3">
           <i class="fa-solid fa-hand-point-right"></i>
           <h2 className="font-bold">Current Time Best Project</h2>
         </div>
@@ -93,7 +106,16 @@ function Home() {
           {/* Project 1 */}
           <div className="flex lg:flex-row flex-col lg:justify-center lg:items-start justify-center items-center lg:gap-4 gap-0">
             <div className="projectShow lg:w-[45%] w-full ">
-              <Galary data = {[WebTodo1, WebTodo2, WebTodo3, WebTodo4, WebTodo5, WebTodo6]}/>
+              <Galary
+                data={[
+                  WebTodo1,
+                  WebTodo2,
+                  WebTodo3,
+                  WebTodo4,
+                  WebTodo5,
+                  WebTodo6,
+                ]}
+              />
             </div>
 
             <div className="projectDescription lg:w-[45%] w-full pl-8 lg:pt-12 ">
@@ -102,7 +124,7 @@ function Home() {
                 <h2>Web ToDo Application</h2>
               </div>
 
-              <ul className= "pl-12 pt-6 flex flex-col gap-3 list-disc">
+              <ul className="pl-12 pt-6 flex flex-col gap-3 list-disc">
                 <li>
                   ToDo || Notes App Made in `ejs` in <b>Frontend</b>
                 </li>
@@ -127,13 +149,13 @@ function Home() {
 
           {/* Project 2 */}
           <div className="flex lg:flex-row flex-col-reverse lg:justify-center lg:items-start justify-center items-center lg:gap-4 gap-0">
-          <div className="projectDescription lg:w-[45%] w-full pl-8 lg:pt-12 ">
+            <div className="projectDescription lg:w-[45%] w-full pl-8 lg:pt-12 ">
               <div className="title flex gap-4 justify-start items-center text-2xl">
                 <i class="fa-solid fa-feather-pointed"></i>
                 <h2>Web Calculator Application</h2>
               </div>
 
-              <ul className= "pl-12 pt-6 flex flex-col gap-3 list-disc">
+              <ul className="pl-12 pt-6 flex flex-col gap-3 list-disc">
                 <li>
                   Calculator Total <b>Frontend</b> Project.
                 </li>
@@ -164,7 +186,7 @@ function Home() {
             </div>
 
             <div className="projectShow lg:w-[45%] w-full ">
-              <Galary data = {[WebCal1, WebCal2, WebCal3, WebCal2, WebCal1]}/>
+              <Galary data={[WebCal1, WebCal2, WebCal3, WebCal4, WebCal5]} />
             </div>
           </div>
 
@@ -172,31 +194,34 @@ function Home() {
 
           {/* Project 3 */}
           <div className="flex lg:flex-row flex-col lg:justify-center lg:items-start justify-center items-center lg:gap-4 gap-0">
-          <div className="projectShow lg:w-[45%] w-full ">
-              <Galary data = {[DescCal1, DescCal2, DescCal3, DescCal4, DescCal1]}/>
+            <div className="projectShow lg:w-[45%] w-full ">
+              <Galary
+                data={[DescCal1, DescCal2, DescCal3, DescCal4, DescCal5]}
+              />
             </div>
-          
-          <div className="projectDescription lg:w-[45%] w-full pl-8 lg:pt-12 ">
+
+            <div className="projectDescription lg:w-[45%] w-full pl-8 lg:pt-12 ">
               <div className="title flex gap-4 justify-start items-center text-2xl">
                 <i class="fa-solid fa-feather-pointed"></i>
                 <h2>DeskTop Calculator Application</h2>
               </div>
 
-              <ul className= "pl-12 pt-6 flex flex-col gap-3 list-disc">
+              <ul className="pl-12 pt-6 flex flex-col gap-3 list-disc">
                 <li>
-                  ToDo || Notes App Made in `ejs` in <b>Frontend</b>
+                  Desktop Calculator Made in <b>Electron.js</b>
                 </li>
                 <li>
-                  <b>Backend</b> Node.js, Express, Mongodb Used in This Project
+                  <b>Technology</b> used in Project - `Electron.js, HTML, CSS,
+                  JS`
                 </li>
                 <li>
                   Cheak The Project Source Code{" "}
                   <Link
-                    to={"https://github.com/akshaykumar401/Web-ToDo"}
+                    to={"https://github.com/akshaykumar401/Desktop-calculator"}
                     target="_blank"
                     className="hover:text-blue-500 duration-200"
                   >
-                    <b>Web ToDo</b>
+                    <b>Desktop ToDo</b>
                   </Link>
                 </li>
               </ul>
@@ -208,10 +233,41 @@ function Home() {
       <hr className="sm:w-98 w-44 h-0.5 mx-auto my-2 bg-gray-800 border-0 rounded-sm md:my-4 dark:bg-gray-700" />
 
       {/* Skill in Languages */}
-      <div></div>
+      <div className="px-4 py-3">
+        {/* Heading */}
+        <div className="flex items-center gap-3 text-2xl px-3">
+          <i class="fa-solid fa-hand-point-right"></i>
+          <h2 className="font-bold">Skills....</h2>
+        </div>
+
+        <div className="skills flex flex-wrap px-4 gap-2 mt-6">
+          <SkillIdicator level="81" name="C " icon={C} />
+          <SkillIdicator level="89" name="C++ " icon={CPP} />
+          <SkillIdicator level="81" name="java Script" icon={JS} />
+          <SkillIdicator level="70" name="PHP " icon={PHP} />
+          <SkillIdicator level="75" name="Python " icon={Python} />
+          <SkillIdicator
+            level="61"
+            name="Data Structures and Algorithms"
+            icon={DSA}
+          />
+          <SkillIdicator level="72" name="MySQL" icon={Mysql} />
+          <SkillIdicator level="61" name="MongoDB" icon={MongoDB} />
+          <SkillIdicator level="75" name="React" icon={ReactJS} />
+          <SkillIdicator level="73" name="Backend" icon={Backend} />
+          <SkillIdicator level="90" name="Frontend" icon={Frontend} />
+        </div>
+      </div>
+
+      <hr className="sm:w-98 w-44 h-0.5 mx-auto my-2 bg-gray-800 border-0 rounded-sm md:my-4 dark:bg-gray-700" />
 
       {/* Contect */}
-      <div></div>
+      <div className="px-4 py-3">
+        <div className="flex items-center gap-3 text-2xl px-3">
+          <i class="fa-solid fa-hand-point-right"></i>
+          <h2 className="font-bold">Contect Me:</h2>
+        </div>
+      </div>
     </div>
   );
 }

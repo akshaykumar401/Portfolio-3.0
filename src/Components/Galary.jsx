@@ -9,7 +9,7 @@ function Galary({ data }) {
   };
 
   return (
-    <div className=" w-full  h-auto ">
+    <div className="  ">
       <div className="grid gap-4 py-8">
         <div className="flex justify-center items-center h-full w-full">
           <img
@@ -19,11 +19,11 @@ function Galary({ data }) {
             alt=""
           />
         </div>
-        <div className={`grid grid-cols-${data.length} gap-3`}>
+        <div className="flex gap-3 justify-between">
           {data.map((img) => (
             <div key={img}>
               <img
-                className="h-auto max-w-full rounded-lg image"
+                className="h-8 sm:h-16 md:h-23 max-w-full rounded-lg image cursor-pointer"
                 src={img}
                 alt=""
                 onClick={() => {
