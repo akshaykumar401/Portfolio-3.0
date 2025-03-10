@@ -27,7 +27,7 @@ function Header() {
 
       {/* For Larger Screen */}
       <div className='w-[80%] h-full'>
-        <ul id='list' className='hidden md:flex md:justify-around md:items-center md:h-full md:text-lg'>
+        <ul id='list' className='hidden md:flex md:justify-around md:items-center md:h-full md:text-lg z-50'>
           <li>
             <NavLink
               to="/"
