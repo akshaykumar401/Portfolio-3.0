@@ -1,12 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Input } from "../index.js"
+import { Input } from "../index.js";
+import Conf from "../../Config/Conf.js";
+
+// console.log(Conf.email)
 
 function Contect() {
   const handleSubmit = (e) => {
-    e.preventDefault()
-    // alert("OK")
-  }
+    e.preventDefault();
+    const email = document.getElementById("Email");
+    const name = document.getElementById("Name");
+    const sublect = document.getElementById("Subject");
+    const message = document.getElementById("Your message");
+
+    
+  };
 
   return (
     <div className="px-12 flex justify-center my-6 w-full">
@@ -59,16 +67,27 @@ function Contect() {
         </div>
 
         {/* Email Option */}
-        <form className="w-[90%] md:w-[45%] h-[94%] rounded-2xl bg-sky-500 m-4 flex flex-col items-center" onSubmit={handleSubmit}>
+        <form
+          className="w-[90%] md:w-[45%] h-[94%] rounded-2xl bg-sky-500 m-4 flex flex-col items-center"
+          onSubmit={handleSubmit}
+        >
           <Input type="email" label="Email" require={true} className="mt-12" />
 
-          <Input type="text" label="name" require={false} className="mt-2" />
+          <Input type="text" label="Name" require={false} className="mt-2" />
 
           <Input type="text" label="Subject" require={true} className="mt-2" />
 
-          <Input type="text" label="Your message" require={false} className="mt-2 " />
+          <Input
+            type="text"
+            label="Your message"
+            require={false}
+            className="mt-2 "
+          />
 
-          <input type="Submit" className="my-6 w-[90%] h-12 cursor-pointer outline-none rounded-2xl active:scale-95 duration-200 hover:bg-amber-600 bg-amber-700 text-xl"/>
+          <input
+            type="Submit"
+            className="my-6 w-[90%] h-12 cursor-pointer outline-none rounded-2xl active:scale-95 duration-200 hover:bg-amber-600 bg-amber-700 text-xl"
+          />
         </form>
       </div>
     </div>

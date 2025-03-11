@@ -7,8 +7,13 @@ function SkillIdicator({ level, icon, name }) {
         <img src={icon} alt={name} className="h-10 dark:bg-transparent bg-slate-200 rounded-xl p-1" />
         <p>{name}</p>
       </div>
-      <div className="">
-        <input type="range" value={level} disabled name={name} id={name} />
+      <div className="flex items-center">
+        <div className="relative w-32 h-2 bg-gray-300 rounded-full">
+          <div
+            className="absolute top-0 left-0 h-full bg-amber-500 rounded-full"
+            style={{ width: `${level}%` }}
+          ></div>
+        </div>
         <span className="pl-4 text-xl font-semibold">{level}%</span>
       </div>
     </div>
