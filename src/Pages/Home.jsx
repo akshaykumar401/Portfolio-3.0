@@ -1,5 +1,10 @@
 import React from "react";
-import { Profile, Galary, SkillIdicator } from "../Components";
+import { 
+  Profile,
+  Galary, 
+  SkillIdicator,
+  Contect
+} from "../Components";
 import { Link } from "react-router-dom";
 import {
   WebTodo1,
@@ -267,6 +272,9 @@ function Home() {
           <i class="fa-solid fa-hand-point-right"></i>
           <h2 className="font-bold">Contect Me:</h2>
         </div>
+
+        {/* Card For Take email and Message */}
+        <Contect />
       </div>
     </div>
   );

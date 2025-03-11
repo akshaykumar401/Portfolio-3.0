@@ -5,6 +5,8 @@ import Profile from "./Profile.jsx";
 import Galary from "./Galary.jsx";
 import Loader from "./Loader.jsx";
 import SkillIdicator from "./SkillIdicator.jsx";
+import Contect from "./Contect/Contect.jsx";
+import Input from "./Input.jsx";
 
 export {
   Header,
@@ -13,5 +15,7 @@ export {
   Profile,
   Galary,
   Loader,
-  SkillIdicator
+  SkillIdicator,
+  Contect,
+  Input,
 }

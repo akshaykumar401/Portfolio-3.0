@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
-    <div className='w-full h-[35rem] sm:h-78 dark:bg-blue-950 bg-blue-300 dark:text-white text-black'>
+    <div className='w-full h-[35rem] sm:h-78 dark:bg-blue-950 bg-blue-300 dark:text-white text-black mt-20'>
       <div className='sm:flex-row flex-col flex justify-around items-center h-3/4'>
         {/* Icon Brand name */}
         <Link to='/' className='text-3xl font-bold flex justify-center items-center h-full font-sans dark:drop-shadow-[0px_0px_10px_#FFEB55] drop-shadow-[0px_0px_20px_#16FF00] pt-8 sm:pt-0'>
