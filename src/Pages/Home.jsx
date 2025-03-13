@@ -143,7 +143,7 @@ function Home() {
                     target="_blank"
                     className="hover:text-blue-500 duration-200"
                   >
-                    <b>Web ToDo</b>
+                    <b><u>Web ToDo</u></b>
                   </Link>
                 </li>
               </ul>
@@ -174,7 +174,7 @@ function Home() {
                     target="_blank"
                     className="hover:text-blue-500 duration-200"
                   >
-                    <b>Open Project</b>
+                    <b><u>Open Project</u></b>
                   </Link>
                 </li>
                 <li>
@@ -184,7 +184,7 @@ function Home() {
                     target="_blank"
                     className="hover:text-blue-500 duration-200"
                   >
-                    <b>Web Calculator</b>
+                    <b><u>Web Calculator</u></b>
                   </Link>
                 </li>
               </ul>
@@ -226,7 +226,7 @@ function Home() {
                     target="_blank"
                     className="hover:text-blue-500 duration-200"
                   >
-                    <b>Desktop ToDo</b>
+                    <b><u>Desktop ToDo</u></b>
                   </Link>
                 </li>
               </ul>
