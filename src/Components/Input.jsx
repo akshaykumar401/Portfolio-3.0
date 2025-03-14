@@ -6,6 +6,7 @@ function Input({ type, label, require=false, className="" }) {
       <input
         type={type}
         id={label}
+        name={label}
         className="block px-2.5 pb-2.5 pt-4 w-full text-lg text-gray-900 bg-transparent rounded-lg border-1 border-black-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:black-blue-500 focus:outline-none focus:ring-0 focus:border-black-600 peer"
         placeholder=" "
         required={require}

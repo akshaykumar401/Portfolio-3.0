@@ -2,18 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Input } from "../index.js";
 import Conf from "../../Config/Conf.js";
+import emailjs from "@emailjs/browser"
 
 // console.log(Conf.email)
 
 function Contect() {
   const handleSubmit = (e) => {
     e.preventDefault();
-    const email = document.getElementById("Email");
-    const name = document.getElementById("Name");
-    const sublect = document.getElementById("Subject");
-    const message = document.getElementById("Your message");
 
-    
+    emailjs.sendForm( Conf.ServerId, Conf.TemplateId, e.target, Conf.PublicId)
   };
 
   return (
