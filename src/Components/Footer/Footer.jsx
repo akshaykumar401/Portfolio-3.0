@@ -14,17 +14,17 @@ function Footer() {
         <ul id='contect' className='flex flex-col pt-10 items-center h-full text-lg'>
           <li className='font-semiboldbold text-xl'>Contect On:</li>
           <li className='pt-4 dark:hover:text-blue-500 hover:text-yellow-400'>
-            <Link to='https://www.linkedin.com/in/username' target='_blank' rel='noreferrer'>
+            <Link to='https://www.linkedin.com/in/akshay-kumar-2512b529a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target='_blank' rel='noreferrer'>
               LinkedIn
             </Link>
           </li>
           <li className='pt-1 dark:hover:text-blue-500 hover:text-yellow-400'>
-            <Link to="https://www.github.com" target='_blank' rel='noreferrer'>
+            <Link to="https://github.com/akshaykumar401" target='_blank' rel='noreferrer'>
               Github
             </Link>
           </li>
           <li className='pt-1 dark:hover:text-blue-500 hover:text-yellow-400'>
-            <Link to="https://www.discord.com" target='_blank' rel='noreferrer'>
+            <Link to="https://discord.gg/gSTESUw7" target='_blank' rel='noreferrer'>
               Discord
             </Link>
           </li>
@@ -35,17 +35,17 @@ function Footer() {
           <li className='font-semiboldbold text-xl'>Top Projects:
           </li>
         <li className='pt-4 dark:hover:text-blue-500 hover:text-yellow-400'>
-            <Link to='/' target='_blank' rel='noreferrer'>
+            <Link to='https://github.com/akshaykumar401/Web-ToDo' target='_blank' rel='noreferrer'>
               Project 1
             </Link>
           </li>
           <li className='pt-1 dark:hover:text-blue-500 hover:text-yellow-400'>
-            <Link to="/" target='_blank' rel='noreferrer'>
+            <Link to="https://github.com/akshaykumar401/web-claculator" target='_blank' rel='noreferrer'>
               Project 2
             </Link>
           </li>
           <li className='pt-1 dark:hover:text-blue-500 hover:text-yellow-400'>
-            <Link to="/" target='_blank' rel='noreferrer'>
+            <Link to="https://github.com/akshaykumar401/Desktop-calculator" target='_blank' rel='noreferrer'>
               Project 3
             </Link>
           </li>

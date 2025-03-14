@@ -57,7 +57,7 @@ function Home() {
           <ul className="flex justify-around items-center h-full z-50 flex-col text-gray-600 text-2xl">
             <li className="hover:scale-125 cursor-pointer duration-200 hover:text-black hover:rotate-15">
               <Link
-                to="https://www.github.com"
+                to="https://github.com/akshaykumar401"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -66,7 +66,7 @@ function Home() {
             </li>
             <li className="hover:scale-125 cursor-pointer duration-200 hover:text-blue-700 hover:rotate-15">
               <Link
-                to="https://www.linkedin.com/in/username"
+                to="https://www.linkedin.com/in/akshay-kumar-2512b529a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -75,7 +75,7 @@ function Home() {
             </li>
             <li className="hover:scale-125 cursor-pointer duration-200 hover:text-blue-300 hover:rotate-15">
               <Link
-                to="https://www.discord.com"
+                to="https://discord.gg/gSTESUw7"
                 target="_blank"
                 rel="noreferrer"
               >

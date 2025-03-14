@@ -4,13 +4,14 @@ import { Input } from "../index.js";
 import Conf from "../../Config/Conf.js";
 import emailjs from "@emailjs/browser"
 
-// console.log(Conf.email)
 
 function Contect() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
     emailjs.sendForm( Conf.ServerId, Conf.TemplateId, e.target, Conf.PublicId)
+    const form = document.getElementById("formData");
+    form.reset();
   };
 
   return (
@@ -30,7 +31,7 @@ function Contect() {
           <div className="pl-8 pt-6 flex flex-col justify-center gap-5">
             <div className="inline-block">
               <Link
-                to={"https://www.linkedin.com/in/username"}
+                to={"https://www.linkedin.com/in/akshay-kumar-2512b529a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"}
                 target={"_blank"}
                 className="text-2xl text-gray-700 hover:text-blue-600 transition duration-300 ease-in flex gap-2 items-center hover:rotate-3"
               >
@@ -41,7 +42,7 @@ function Contect() {
 
             <div className="inline-block">
               <Link
-                to={"https://www.linkedin.com/in/username"}
+                to={"https://discord.gg/gSTESUw7"}
                 target={"_blank"}
                 className="text-2xl text-gray-700 hover:text-blue-400 transition duration-300 ease-in flex gap-2 items-center hover:-rotate-3"
               >
@@ -52,7 +53,7 @@ function Contect() {
 
             <div className="inline-block">
               <Link
-                to={"https://www.linkedin.com/in/username"}
+                to={"https://github.com/akshaykumar401"}
                 target={"_blank"}
                 className="text-2xl text-gray-700 hover:text-black transition duration-300 ease-in flex gap-2 items-center hover:rotate-3"
               >
@@ -66,6 +67,7 @@ function Contect() {
         {/* Email Option */}
         <form
           className="w-[90%] md:w-[45%] h-[94%] rounded-2xl bg-sky-500 m-4 flex flex-col items-center"
+          id="formData"
           onSubmit={handleSubmit}
         >
           <Input type="email" label="Email" require={true} className="mt-12" />
