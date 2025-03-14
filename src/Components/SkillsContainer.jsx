@@ -18,7 +18,7 @@ import {
 
 function SkillsContainer() {
   return (
-    <div className="skills flex flex-wrap px-4 gap-2 mt-6">
+    <div className="skills flex flex-wrap px-2 gap-2 mt-6">
       <SkillIdicator level="81" name="C " icon={C} />
       <SkillIdicator level="89" name="C++ " icon={CPP} />
       <SkillIdicator level="81" name="java Script" icon={JS} />

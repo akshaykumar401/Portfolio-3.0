@@ -234,7 +234,9 @@ function Home() {
           <h2 className="font-bold">Skills....</h2>
         </div>
 
-        <SkillsContainer />
+        <div className="w-full">
+          <SkillsContainer />
+        </div>
       </div>
 
       <hr className="sm:w-98 w-44 h-0.5 mx-auto my-2 bg-gray-800 border-0 rounded-sm md:my-4 dark:bg-gray-700" />

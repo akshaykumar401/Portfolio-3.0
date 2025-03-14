@@ -6,7 +6,7 @@ function About() {
   return (
     <div className="w-full h-auto flex flex-col">
       {/* Row 1 */}
-      <div className="flex py-4 px-4 md:px-8 items-center md:flex-row flex-col-reverse">
+      <div className="flex py-4 px-4 md:px-8 items-center md:flex-row flex-col-reverse md:justify-center">
         <p className="md:w-[47%] w-full px-4 md:px-0 text-xl sm:text-2xl justify-between">
           Hey Every One I'm{" "}
           <b className="text-2xl sm:text-3xl  drop-shadow-[0_2px_3px_#FFEB3B] dark:drop-shadow-[0_2px_3px_#0FFF50]">
@@ -27,7 +27,7 @@ function About() {
       <hr className="sm:w-98 w-44 h-0.5 mx-auto my-2 bg-gray-800 border-0 rounded-sm md:my-4 dark:bg-gray-700" />
 
       {/* Row 2 */}
-      <div className="flex py-4 px-4 md:px-8 items-center md:flex-row gap-8 flex-col">
+      <div className="flex py-4 px-4 md:px-8 items-center md:flex-row gap-8 flex-col md:justify-center">
         <img
           className="w-[75%] sm:w-[55%] md:w-[45%] lg:w-[40%] drop-shadow-[0_2px_3px_black] dark:drop-shadow-[0_2px_3px_white]"
           src={Studing}
@@ -149,7 +149,7 @@ function About() {
       <hr className="sm:w-98 w-44 h-0.5 mx-auto my-2 bg-gray-800 border-0 rounded-sm md:my-4 dark:bg-gray-700" />
 
       {/* Row 4-> Skills Display */}
-      <div className="px-4 py-3 mb-6">
+      <div className="px-2 w-full py-3 mb-6">
         {/* Heading */}
         <div className="flex items-center gap-3 text-2xl px-3">
           <i class="fa-solid fa-hand-point-right"></i>
@@ -168,10 +168,59 @@ function About() {
           <i class="fa-solid fa-hand-point-right"></i>
           <h2 className="font-bold">Hobby....</h2>
         </div>
+
+        <div className="py-4 sm:px-16 px-6">
+          <p className="text-xl">
+            Here are my Some of Hobby{" "}
+            <span className="text-2xl pl-2">
+              <i class="fa-solid fa-puzzle-piece"></i>
+            </span>
+          </p>
+
+          <ul className="list-disc sm:pl-16 pl-6 pt-4 flex flex-col gap-2 text-lg">
+            <li>
+              Play Video Games.{" "}
+              <i class="text-2xl pl-2 fa-solid fa-gamepad"></i>
+            </li>
+            <li>
+              Create WebSite. <i class="text-2xl pl-2 fa-solid fa-computer"></i>
+            </li>
+            <li>
+              Learn New Things.{" "}
+              <i class="text-2xl pl-2 fa-solid fa-chart-line"></i>
+            </li>
+            <li>
+              Make a Game.{" "}
+              <i class="text-2xl pl-2 fa-solid fa-square-binary"></i>
+            </li>
+          </ul>
+        </div>
       </div>
 
+      <hr className="sm:w-98 w-44 h-0.5 mx-auto my-2 bg-gray-800 border-0 rounded-sm md:my-4 dark:bg-gray-700" />
+
       {/* Row 6-> Language I Know */}
-      <div></div>
+      <div className="px-4 py-3 mb-6">
+        {/* Heading */}
+        <div className="flex items-center gap-3 text-2xl px-3">
+          <i class="fa-solid fa-hand-point-right"></i>
+          <h2 className="font-bold">Language....</h2>
+        </div>
+
+        <div className="py-4 sm:px-16 px-6">
+          <p className="text-xl">
+            The Language I Know{" "}
+            <span className="text-2xl pl-2">
+              <i class="fa-solid fa-language"></i>
+            </span>
+          </p>
+
+          <ul className="list-disc sm:pl-16 pl-6 pt-4 flex flex-col gap-2 text-lg">
+            <li>Hindi</li>
+            <li>English</li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
