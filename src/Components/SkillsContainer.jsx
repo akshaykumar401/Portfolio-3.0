@@ -11,7 +11,7 @@ import {
   PHP,
   Python,
   ReactJS,
-} from "../../public/index.js";
+} from "../assets/Images.js";
 import {
   SkillIdicator,
 } from "../Components/index.js"

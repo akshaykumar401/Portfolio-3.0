@@ -23,7 +23,7 @@ import {
   DescCal3,
   DescCal4,
   DescCal5,
-} from "../../public/index.js";
+} from "../assets/Images.js";
 
 function Home() {
   return (

@@ -29,6 +29,13 @@ import PHP from "./Languages/Php.png"
 import Python from "./Languages/Python.png"
 import ReactJS from "./Languages/React.png"
 
+import Related from "./Related.png"
+import Studing from "./Studing.png"
+
+import GBIS from "./Schools/GBIS.jpg"
+import GCR from "./Schools/GCR.jpg"
+import SBU from "./Schools/SBU.webp"
+
 export {
   WebTodo1,
   WebTodo2,
@@ -57,4 +64,9 @@ export {
   PHP,
   Python,
   ReactJS,
+  Related,
+  Studing,
+  GBIS,
+  GCR,
+  SBU,
 }
