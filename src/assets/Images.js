@@ -31,6 +31,7 @@ import ReactJS from "./Languages/React.png"
 
 import Related from "./Related.png"
 import Studing from "./Studing.png"
+import Hii from "./Hiii.png"
 
 import GBIS from "./Schools/GBIS.jpg"
 import GCR from "./Schools/GCR.jpg"
@@ -69,4 +70,5 @@ export {
   GBIS,
   GCR,
   SBU,
+  Hii,
 }

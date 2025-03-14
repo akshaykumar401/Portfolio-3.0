@@ -3,6 +3,19 @@ import { Link, NavLink } from 'react-router-dom'
 import { Switch } from "../index.js";
 
 function Header() {
+  document.addEventListener('click', (event) => {
+    const menu = document.getElementById("list");
+    const menuButton = document.getElementById("menu");
+  
+    if (menu && menuButton && !menuButton.contains(event.target) && !menu.contains(event.target)) {
+      if (!menu.classList.contains('hidden')) {
+        menu.classList.add('hidden');
+        menu.classList.remove('flex', 'flex-col', 'items-center', "py-20", "w-[250px]", "h-screen", "bg-blue-300", "dark:bg-blue-950", "text-black", "dark:text-white", "fixed", "top-0", "right-0", "transition-all", "duration-200", "gap-4");
+      }
+    }
+  });
+
+  
   const displayMenu = () => {
     const menu = document.getElementById("list");
     
