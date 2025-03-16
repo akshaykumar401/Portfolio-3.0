@@ -2,7 +2,7 @@
 
 Hii There This is My Portfolio. Made in **Reactjs**.
 
-- Link to the portfolio: [Portfolio](https://portfolio-portfolio-portfolio.netlify.app/)
+- Link to the portfolio: [Portfolio](https://akshayportfolio30.vercel.app/)
 - Link to the code: [Code](https://github.com/akshaykumar401/Portfolio-3.0.git)
 
 ## Features

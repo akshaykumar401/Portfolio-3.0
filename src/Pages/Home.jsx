@@ -25,6 +25,7 @@ import {
   DescCal5,
   User
 } from "../assets/Images.js";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Home() {
   return (
@@ -62,7 +63,7 @@ function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="fa-brands fa-square-github"></i>
+                <FontAwesomeIcon icon="fa-brands fa-square-github" />
               </Link>
             </li>
             <li className="hover:scale-125 cursor-pointer duration-200 hover:text-blue-700 hover:rotate-15">
