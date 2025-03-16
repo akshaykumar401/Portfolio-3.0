@@ -19,8 +19,9 @@ import {
   DescCal4,
   DescCal5,
 } from "../assets/Images.js";
-import { Galary } from "../Components/index.js"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Galary } from "../Components/index.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHandPointRight, faFeatherPointed } from "@fortawesome/free-solid-svg-icons";
 
 function Projects() {
   return (
@@ -53,7 +54,7 @@ function Projects() {
       <div className="px-4 py-3 mb-6">
         {/* Heading */}
         <div className="flex items-center gap-3 text-2xl px-3">
-          <FontAwesomeIcon icon="fa-solid fa-hand-point-right" />
+          <FontAwesomeIcon icon={faHandPointRight} />
           <h2 className="font-bold">Projects....</h2>
         </div>
 
@@ -75,7 +76,7 @@ function Projects() {
 
             <div className="projectDescription lg:w-[45%] w-full pl-8 lg:pt-12 ">
               <div className="title flex gap-4 justify-start items-center text-2xl">
-                <FontAwesomeIcon icon="fa-solid fa-feather-pointed" />
+                <FontAwesomeIcon icon={faFeatherPointed} />
                 <h2>Web ToDo Application</h2>
               </div>
 
@@ -108,7 +109,7 @@ function Projects() {
           <div className="flex lg:flex-row flex-col-reverse lg:justify-center lg:items-start justify-center items-center lg:gap-4 gap-0">
             <div className="projectDescription lg:w-[45%] w-full pl-8 lg:pt-12 ">
               <div className="title flex gap-4 justify-start items-center text-2xl">
-                <FontAwesomeIcon icon="fa-solid fa-feather-pointed" />
+                <FontAwesomeIcon icon={faFeatherPointed} />
                 <h2>Web Calculator Application</h2>
               </div>
 
@@ -163,7 +164,7 @@ function Projects() {
 
             <div className="projectDescription lg:w-[45%] w-full pl-8 lg:pt-12 ">
               <div className="title flex gap-4 justify-start items-center text-2xl">
-                <FontAwesomeIcon icon="fa-solid fa-feather-pointed" />
+                <FontAwesomeIcon icon={faFeatherPointed} />
                 <h2>DeskTop Calculator Application</h2>
               </div>
 

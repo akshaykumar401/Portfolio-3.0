@@ -25,7 +25,9 @@ import {
   DescCal5,
   User
 } from "../assets/Images.js";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHandPointRight, faFeatherPointed } from "@fortawesome/free-solid-svg-icons";
+import { faGithubSquare, faLinkedin, faDiscord } from "@fortawesome/free-brands-svg-icons";
 
 function Home() {
   return (
@@ -63,7 +65,7 @@ function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FontAwesomeIcon icon="fa-brands fa-square-github" />
+                <FontAwesomeIcon icon={faGithubSquare} />
               </Link>
             </li>
             <li className="hover:scale-125 cursor-pointer duration-200 hover:text-blue-700 hover:rotate-15">
@@ -72,7 +74,7 @@ function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+                <FontAwesomeIcon icon={faLinkedin} />
               </Link>
             </li>
             <li className="hover:scale-125 cursor-pointer duration-200 hover:text-blue-300 hover:rotate-15">
@@ -81,7 +83,7 @@ function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FontAwesomeIcon icon="fa-brands fa-discord" />
+                <FontAwesomeIcon icon={faDiscord} />
               </Link>
             </li>
           </ul>
@@ -94,7 +96,7 @@ function Home() {
       <div className="px-4 py-3">
         {/* Heading */}
         <div className="flex items-center gap-3 text-2xl px-3">
-          <FontAwesomeIcon icon="fa-solid fa-hand-point-right" />
+          <FontAwesomeIcon icon={faHandPointRight} />
           <h2 className="font-bold">Current Time Best Project</h2>
         </div>
 
@@ -116,7 +118,7 @@ function Home() {
 
             <div className="projectDescription lg:w-[45%] w-full pl-8 lg:pt-12 ">
               <div className="title flex gap-4 justify-start items-center text-2xl">
-                <FontAwesomeIcon icon="fa-solid fa-feather-pointed" />
+                <FontAwesomeIcon icon={faFeatherPointed} />
                 <h2>Web ToDo Application</h2>
               </div>
 
@@ -147,7 +149,7 @@ function Home() {
           <div className="flex lg:flex-row flex-col-reverse lg:justify-center lg:items-start justify-center items-center lg:gap-4 gap-0">
             <div className="projectDescription lg:w-[45%] w-full pl-8 lg:pt-12 ">
               <div className="title flex gap-4 justify-start items-center text-2xl">
-                <FontAwesomeIcon icon="fa-solid fa-feather-pointed" />
+                <FontAwesomeIcon icon={faFeatherPointed} />
                 <h2>Web Calculator Application</h2>
               </div>
 
@@ -198,7 +200,7 @@ function Home() {
 
             <div className="projectDescription lg:w-[45%] w-full pl-8 lg:pt-12 ">
               <div className="title flex gap-4 justify-start items-center text-2xl">
-                <FontAwesomeIcon icon="fa-solid fa-feather-pointed" />
+                <FontAwesomeIcon icon={faFeatherPointed} />
                 <h2>DeskTop Calculator Application</h2>
               </div>
 
@@ -232,7 +234,7 @@ function Home() {
       <div className="px-4 py-3">
         {/* Heading */}
         <div className="flex items-center gap-3 text-2xl px-3">
-          <FontAwesomeIcon icon="fa-solid fa-hand-point-right" />
+          <FontAwesomeIcon icon={faHandPointRight} />
           <h2 className="font-bold">Skills....</h2>
         </div>
 
@@ -246,7 +248,7 @@ function Home() {
       {/* Contect */}
       <div className="px-4 py-3">
         <div className="flex items-center gap-3 text-2xl px-3">
-          <FontAwesomeIcon icon="fa-solid fa-hand-point-right" />
+          <FontAwesomeIcon icon={faHandPointRight} />
           <h2 className="font-bold">Contect Me:</h2>
         </div>
 

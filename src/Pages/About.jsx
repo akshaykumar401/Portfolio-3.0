@@ -1,7 +1,8 @@
 import React from "react";
 import { Related, Studing, GBIS, GCR, SBU } from "../assets/Images.js";
 import { SkillsContainer } from "../Components/index.js";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHandPointRight, faAward, faSchool, faBuildingColumns, faGraduationCap, faPuzzlePiece, faGamepad, faComputer, faChartLine, faSquareBinary, faLanguage } from "@fortawesome/free-solid-svg-icons";
 
 function About() {
   return (
@@ -48,17 +49,17 @@ function About() {
       <div className="px-4 py-3">
         {/* Heading */}
         <div className="flex items-center gap-4 text-2xl px-3">
-          <FontAwesomeIcon icon="fa-solid fa-hand-point-right" />
+          <FontAwesomeIcon icon={faHandPointRight} />
           <h2 className="font-bold">
             Education Qualification.
-            <FontAwesomeIcon className="pl-2 text-3xl" icon="fa-solid fa-award" />
+            <FontAwesomeIcon className="pl-2 text-3xl" icon={faAward} />
           </h2>
         </div>
 
         <div className="px-12 py-6">
           <div className="title">
             <h4 className="gap-4 font-semibold text-xl sm:text-2xl">
-              <FontAwesomeIcon className="pr-4" icon="fa-solid fa-school" />
+              <FontAwesomeIcon className="pr-4" icon={faSchool} />
               Secondary School Certificate (SSC) at{" "}
               <i>Gautam Buddha International School</i>
             </h4>
@@ -87,7 +88,7 @@ function About() {
         <div className="px-12 py-6">
           <div className="title">
             <h4 className="gap-4 font-semibold text-xl sm:text-2xl">
-              <FontAwesomeIcon className="pr-4" icon="fa-solid fa-building-columns" />
+              <FontAwesomeIcon className="pr-4" icon={faBuildingColumns} />
               Higher Secondary Certificate (HSC) at{" "}
               <i>Gossner College Ranchi</i>
             </h4>
@@ -117,7 +118,7 @@ function About() {
         <div className="px-12 py-6">
           <div className="title">
             <h4 className="gap-4 font-semibold text-xl sm:text-2xl">
-              <FontAwesomeIcon className="pr-4" icon="fa-solid fa-graduation-cap" />
+              <FontAwesomeIcon className="pr-4" icon={faGraduationCap} />
               University at <i>Sarala Birla University.</i>
             </h4>
 
@@ -153,7 +154,7 @@ function About() {
       <div className="px-2 w-full py-3 mb-6">
         {/* Heading */}
         <div className="flex items-center gap-3 text-2xl px-3">
-          <FontAwesomeIcon icon="fa-solid fa-hand-point-right" />
+          <FontAwesomeIcon icon={faHandPointRight} />
           <h2 className="font-bold">Skills....</h2>
         </div>
 
@@ -166,7 +167,7 @@ function About() {
       <div className="px-4 py-3 mb-6">
         {/* Heading */}
         <div className="flex items-center gap-3 text-2xl px-3">
-          <FontAwesomeIcon icon="fa-solid fa-hand-point-right" />
+          <FontAwesomeIcon icon={faHandPointRight} />
           <h2 className="font-bold">Hobby....</h2>
         </div>
 
@@ -174,25 +175,26 @@ function About() {
           <p className="text-xl">
             Here are my Some of Hobby{" "}
             <span className="text-2xl pl-2">
-              <i class="fa-solid fa-puzzle-piece"></i>
+              <FontAwesomeIcon icon={faPuzzlePiece} />
             </span>
           </p>
 
           <ul className="list-disc sm:pl-16 pl-6 pt-4 flex flex-col gap-2 text-lg">
             <li>
               Play Video Games.{" "}
-              <i class="text-2xl pl-2 fa-solid fa-gamepad"></i>
+              <FontAwesomeIcon className="text-2xl pl-2" icon={faGamepad} />
             </li>
             <li>
-              Create WebSite. <i class="text-2xl pl-2 fa-solid fa-computer"></i>
+              Create WebSite.{" "}
+              <FontAwesomeIcon className="text-2xl pl-2" icon={faComputer} />
             </li>
             <li>
               Learn New Things.{" "}
-              <i class="text-2xl pl-2 fa-solid fa-chart-line"></i>
+              <FontAwesomeIcon className="text-2xl pl-2" icon={faChartLine} />
             </li>
             <li>
               Make a Game.{" "}
-              <i class="text-2xl pl-2 fa-solid fa-square-binary"></i>
+              <FontAwesomeIcon className="text-2xl pl-2" icon={faSquareBinary} />
             </li>
           </ul>
         </div>
@@ -204,7 +206,7 @@ function About() {
       <div className="px-4 py-3 mb-6">
         {/* Heading */}
         <div className="flex items-center gap-3 text-2xl px-3">
-          <FontAwesomeIcon icon="fa-solid fa-hand-point-right" />
+          <FontAwesomeIcon icon={faHandPointRight} />
           <h2 className="font-bold">Language....</h2>
         </div>
 
@@ -212,7 +214,7 @@ function About() {
           <p className="text-xl">
             The Language I Know{" "}
             <span className="text-2xl pl-2">
-              <i class="fa-solid fa-language"></i>
+              <FontAwesomeIcon icon={faLanguage} />
             </span>
           </p>
 
