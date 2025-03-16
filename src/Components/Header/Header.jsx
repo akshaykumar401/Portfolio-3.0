@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { Switch } from "../index.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
   document.addEventListener('click', (event) => {
@@ -105,7 +107,7 @@ function Header() {
       {/* For Smaller Screen */}
       <div id="menu" className='w-[40px] h-full flex justify-center items-center md:hidden z-50'>
         <button className='text-2xl cursor-pointer hover:text-gray-500 dark:hover:text-yellow-200' onClick={displayMenu}>
-          <i class="fa-solid fa-bars-staggered"></i>
+          <FontAwesomeIcon icon={faBarsStaggered} />
         </button>
       </div>
     </header>
