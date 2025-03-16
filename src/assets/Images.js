@@ -37,6 +37,8 @@ import GBIS from "./Schools/GBIS.jpg"
 import GCR from "./Schools/GCR.jpg"
 import SBU from "./Schools/SBU.webp"
 
+import User from "./user.jpg"
+
 export {
   WebTodo1,
   WebTodo2,
@@ -71,4 +73,5 @@ export {
   GCR,
   SBU,
   Hii,
+  User
 }

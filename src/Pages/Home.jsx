@@ -23,6 +23,7 @@ import {
   DescCal3,
   DescCal4,
   DescCal5,
+  User
 } from "../assets/Images.js";
 
 function Home() {
@@ -48,7 +49,7 @@ function Home() {
 
         {/* Image */}
         <Profile
-          imageSrc="https://imgs.search.brave.com/n5br92mlxAkV9iOyPo4wp_X9NCwW32v_8S_E_ap_9SA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9pbWFnZS1iYXNr/ZXRiYWxsXzkzMTg3/OC00NTAyMTMuanBn"
+          imageSrc={User}
           name="Profile"
         />
 
