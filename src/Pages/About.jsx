@@ -1,6 +1,7 @@
 import React from "react";
 import { Related, Studing, GBIS, GCR, SBU } from "../assets/Images.js";
 import { SkillsContainer } from "../Components/index.js";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function About() {
   return (
@@ -47,17 +48,17 @@ function About() {
       <div className="px-4 py-3">
         {/* Heading */}
         <div className="flex items-center gap-4 text-2xl px-3">
-          <i class="fa-solid fa-hand-point-right"></i>
+          <FontAwesomeIcon icon="fa-solid fa-hand-point-right" />
           <h2 className="font-bold">
             Education Qualification.
-            <i class="pl-2 text-3xl fa-solid fa-award"></i>
+            <FontAwesomeIcon className="pl-2 text-3xl" icon="fa-solid fa-award" />
           </h2>
         </div>
 
         <div className="px-12 py-6">
           <div className="title">
             <h4 className="gap-4 font-semibold text-xl sm:text-2xl">
-              <i class="fa-solid fa-school pr-4"></i>
+              <FontAwesomeIcon className="pr-4" icon="fa-solid fa-school" />
               Secondary School Certificate (SSC) at{" "}
               <i>Gautam Buddha International School</i>
             </h4>
@@ -86,7 +87,7 @@ function About() {
         <div className="px-12 py-6">
           <div className="title">
             <h4 className="gap-4 font-semibold text-xl sm:text-2xl">
-              <i class="pr-4 fa-solid fa-building-columns"></i>
+              <FontAwesomeIcon className="pr-4" icon="fa-solid fa-building-columns" />
               Higher Secondary Certificate (HSC) at{" "}
               <i>Gossner College Ranchi</i>
             </h4>
@@ -116,7 +117,7 @@ function About() {
         <div className="px-12 py-6">
           <div className="title">
             <h4 className="gap-4 font-semibold text-xl sm:text-2xl">
-              <i class="fa-solid fa-graduation-cap pr-4"></i>
+              <FontAwesomeIcon className="pr-4" icon="fa-solid fa-graduation-cap" />
               University at <i>Sarala Birla University.</i>
             </h4>
 
@@ -152,7 +153,7 @@ function About() {
       <div className="px-2 w-full py-3 mb-6">
         {/* Heading */}
         <div className="flex items-center gap-3 text-2xl px-3">
-          <i class="fa-solid fa-hand-point-right"></i>
+          <FontAwesomeIcon icon="fa-solid fa-hand-point-right" />
           <h2 className="font-bold">Skills....</h2>
         </div>
 
@@ -165,7 +166,7 @@ function About() {
       <div className="px-4 py-3 mb-6">
         {/* Heading */}
         <div className="flex items-center gap-3 text-2xl px-3">
-          <i class="fa-solid fa-hand-point-right"></i>
+          <FontAwesomeIcon icon="fa-solid fa-hand-point-right" />
           <h2 className="font-bold">Hobby....</h2>
         </div>
 
@@ -203,7 +204,7 @@ function About() {
       <div className="px-4 py-3 mb-6">
         {/* Heading */}
         <div className="flex items-center gap-3 text-2xl px-3">
-          <i class="fa-solid fa-hand-point-right"></i>
+          <FontAwesomeIcon icon="fa-solid fa-hand-point-right" />
           <h2 className="font-bold">Language....</h2>
         </div>
 
