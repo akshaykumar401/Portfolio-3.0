@@ -2,15 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Input } from "../index.js";
 import Conf from "../../Config/Conf.js";
-import emailjs from "@emailjs/browser"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import emailjs from "@emailjs/browser";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faDiscord, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 
 function Contect() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm( Conf.ServerId, Conf.TemplateId, e.target, Conf.PublicId)
+    emailjs.sendForm(Conf.ServerId, Conf.TemplateId, e.target, Conf.PublicId);
     const form = document.getElementById("formData");
     form.reset();
   };
@@ -36,7 +36,7 @@ function Contect() {
                 target={"_blank"}
                 className="text-2xl text-gray-700 hover:text-blue-600 transition duration-300 ease-in flex gap-2 items-center hover:rotate-3"
               >
-                <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+                <FontAwesomeIcon icon={faLinkedin} />
                 LinkedIn
               </Link>
             </div>
@@ -47,7 +47,7 @@ function Contect() {
                 target={"_blank"}
                 className="text-2xl text-gray-700 hover:text-blue-400 transition duration-300 ease-in flex gap-2 items-center hover:-rotate-3"
               >
-                <FontAwesomeIcon icon="fa-brands fa-discord" />
+                <FontAwesomeIcon icon={faDiscord} />
                 Discord
               </Link>
             </div>
@@ -58,7 +58,7 @@ function Contect() {
                 target={"_blank"}
                 className="text-2xl text-gray-700 hover:text-black transition duration-300 ease-in flex gap-2 items-center hover:rotate-3"
               >
-                <FontAwesomeIcon icon="fa-brands fa-square-github" />
+                <FontAwesomeIcon icon={faGithubSquare} />
                 Github
               </Link>
             </div>
