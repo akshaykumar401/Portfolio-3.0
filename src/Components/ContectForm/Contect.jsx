@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Input } from "../index.js";
 import Conf from "../../Config/Conf.js";
 import emailjs from "@emailjs/browser"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 function Contect() {
@@ -35,7 +36,7 @@ function Contect() {
                 target={"_blank"}
                 className="text-2xl text-gray-700 hover:text-blue-600 transition duration-300 ease-in flex gap-2 items-center hover:rotate-3"
               >
-                <i class="fa-brands fa-linkedin"></i>
+                <FontAwesomeIcon icon="fa-brands fa-linkedin" />
                 LinkedIn
               </Link>
             </div>
@@ -46,7 +47,7 @@ function Contect() {
                 target={"_blank"}
                 className="text-2xl text-gray-700 hover:text-blue-400 transition duration-300 ease-in flex gap-2 items-center hover:-rotate-3"
               >
-                <i class="fa-brands fa-discord"></i>
+                <FontAwesomeIcon icon="fa-brands fa-discord" />
                 Discord
               </Link>
             </div>
@@ -57,7 +58,7 @@ function Contect() {
                 target={"_blank"}
                 className="text-2xl text-gray-700 hover:text-black transition duration-300 ease-in flex gap-2 items-center hover:rotate-3"
               >
-                <i class="fa-brands fa-square-github"></i>
+                <FontAwesomeIcon icon="fa-brands fa-square-github" />
                 Github
               </Link>
             </div>
