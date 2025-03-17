@@ -57,7 +57,7 @@ function Footer() {
       <div>
         {/* Copy right */}
         <p className='text-center'>
-          &copy; 2021. All rights reserved.
+          &copy; 2025. All rights reserved.
         </p>
       </div>
     </div>
