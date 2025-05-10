@@ -24,7 +24,7 @@ function Footer() {
             </Link>
           </li>
           <li className='pt-1 dark:hover:text-blue-500 hover:text-yellow-400'>
-            <Link to="https://discord.gg/gSTESUw7" target='_blank' rel='noreferrer'>
+            <Link to="https://discord.gg/uAwGSTCh" target='_blank' rel='noreferrer'>
               Discord
             </Link>
           </li>
